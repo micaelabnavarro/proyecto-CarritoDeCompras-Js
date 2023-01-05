@@ -1,0 +1,39 @@
+[
+    {
+        "precio": 170,
+        "id": 1,
+        "titulo": "Cono soft",
+        "imgUrl": "https://i.pinimg.com/originals/46/3a/11/463a114ed39f37be9e9b09e4d3a7855d.jpg"       
+    },
+    {
+        "precio": 380,
+        "id": 2,
+        "titulo": "Cono 1 bocha",
+        "imgUrl": "https://i.pinimg.com/originals/46/3a/11/463a114ed39f37be9e9b09e4d3a7855d.jpg"
+    },
+    {
+        "precio": 550,
+        "id": 3,
+        "titulo": "Cono 2 bochas",
+        "imgUrl": "https://i.pinimg.com/originals/46/3a/11/463a114ed39f37be9e9b09e4d3a7855d.jpg"
+    },
+    {
+        "precio": 4000,
+        "id": 4,
+        "titulo": "Pote 2kg",
+        "imgUrl": "https://i.pinimg.com/originals/46/3a/11/463a114ed39f37be9e9b09e4d3a7855d.jpg"
+    },
+    {
+        "precio": 2300,
+        "id": 5,
+        "titulo": "Pote 1kg",
+        "imgUrl": "https://i.pinimg.com/originals/46/3a/11/463a114ed39f37be9e9b09e4d3a7855d.jpg"
+    },
+    {
+        "precio": 1200,
+        "id": 6,
+        "titulo": "Pote 1/2kg",
+        "imgUrl": "https://i.pinimg.com/originals/46/3a/11/463a114ed39f37be9e9b09e4d3a7855d.jpg"
+    }
+  
+]
