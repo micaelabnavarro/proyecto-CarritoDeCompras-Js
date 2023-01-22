@@ -1,0 +1,47 @@
+.bclass {
+    background-color: rgb(250, 180, 218);
+}
+.text-center {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(201, 24, 148);
+    
+    
+
+}
+
+.container .table  {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    
+}
+
+#contenedor-productos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(214, 9, 153);
+    
+   
+    
+}
+
+#template-productos .card-title {
+    color: rgb(214, 9, 153);
+    
+}
+
+
+
+.container .ccompras {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-color: rgb(214, 9, 153);
+    text-align: center;
+}
+
+.footerc {
+    background-color: black;
+    color: rgb(214, 9, 153);
+    font-family: monospace;
+    text-align: center;
+    max-width: 100%;
+}

@@ -124,7 +124,7 @@ const pintarProductos = (data) => {
 
     botonesEliminar.forEach(btn => {
         btn.addEventListener('click', () => {
-            console.log('...eliminando')
+            //console.log('...eliminando')
             const producto = carrito[btn.dataset.id]
             producto.cantidad--
             if(producto.cantidad === 0) {
