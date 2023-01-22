@@ -1,5 +1,5 @@
 .bclass {
-    background-color: rgb(250, 180, 218);
+     background-color: rgb(250, 180, 218);
 }
 .text-center {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -39,8 +39,8 @@
 }
 
 .footerc {
-    background-color: black;
-    color: rgb(214, 9, 153);
+    background-color: rgb(168, 56, 125);
+    color: rgb(5, 5, 5);
     font-family: monospace;
     text-align: center;
     max-width: 100%;
