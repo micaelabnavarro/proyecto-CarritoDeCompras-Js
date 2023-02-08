@@ -30,6 +30,7 @@ const pintarProductos = (data) => {
 }
 let carrito = {}
 
+
 const detectarBotones = (data) => {
     const botones = document.querySelectorAll('.card button')
     botones.forEach(btn => {
@@ -38,7 +39,7 @@ const detectarBotones = (data) => {
             const producto = data.find(item => item.id === parseInt(btn.dataset.id))
             producto.cantidad = 1
             if (carrito.hasOwnProperty(producto.id)) {
-                producto.cantidad = carrito[producto.id].cantidad + 1
+                producto.cantidad = carrito[producto.id].cantidad
             }
             carrito[producto.id] = { ...producto }
             pintarCarrito()
@@ -46,6 +47,14 @@ const detectarBotones = (data) => {
     })
 
 }
+document.addEventListener('DOMContentLoaded', () => {
+    fetchData()
+    if(localStorage.getItem('carrito')) {
+        carrito = JSON.parse(localStorage.getItem('carrito'))
+        pintarCarrito()
+    }
+})
+
 const items = document.querySelector('#items')
 const pintarCarrito = () => {
     items.innerHTML = ''
@@ -67,11 +76,15 @@ const pintarCarrito = () => {
         const clone = template.cloneNode(true)
         fragment.appendChild(clone)
     })
+    
     items.appendChild(fragment)
+    
     pintarFooter()
     accionBotones()
+   localStorage.setItem('carrito', JSON.stringify(carrito))
+    
 }
-//localStorage.setItem('obejto', JSON.stringify(carrito))
+
 const footer = document.querySelector('#footer-carrito')
 const pintarFooter = () => {
 
@@ -88,6 +101,10 @@ const pintarFooter = () => {
     const nCantidad = Object.values(carrito).reduce((acc, { cantidad }) => acc + cantidad, 0)
     const nPrecio = Object.values(carrito).reduce((acc, { cantidad, precio }) => acc + cantidad * precio, 0)
     //console.log(nPrecio);
+
+
+
+   
 
     template.querySelectorAll('td')[0].textContent = nCantidad
     template.querySelector('span').textContent = nPrecio
@@ -138,6 +155,7 @@ const accionBotones = () => {
         })
     })
 
+
     botonesEliminar.forEach(btn => {
         btn.addEventListener('click', () => {
             //console.log('...eliminando')
@@ -154,6 +172,7 @@ const accionBotones = () => {
         })
     })
 
+    
 
 
 
